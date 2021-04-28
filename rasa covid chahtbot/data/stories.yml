@@ -1,0 +1,45 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_message_1
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: gratitude
+  - action: utter_message_1
+
+- story: display distribution path 1
+  steps:
+  - intent: distribution
+  - action: give_distribution
+  - intent: gratitude
+  - action: utter_message_2
+  
+- story: display distribution path 2
+  steps:
+  - intent: distribution
+  - action: give_distribution
+  - intent: nothing
+  - action: utter_message_3

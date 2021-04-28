@@ -1,0 +1,283 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: nothing
+  examples: |
+   - No
+   - No thanks
+   - No thank you
+   - No, that would be all
+- intent: gratitude
+  examples: |
+    - thanks
+    - thank you
+    - thanks for the information
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: distribution
+  examples: |
+   - what are the covid cases in [Maharashtra](state)
+   - what is the situation in [Maharashtra](state)
+   - give me information about the state of [Maharashtra](state)
+   - [Maharashtra](state)
+   
+   - what are the covid cases in [Odisha](state)
+   - what is the situation in [Odisha](state)
+   - give me information about the state of [Odisha](state)
+   - [Odisha](state)
+   
+   - what are the covid cases in [Madhya Pradesh](state)
+   - what is the situation in [Madhya Pradesh](state)
+   - give me information about the state of [Madhya Pradesh](state)
+   - [Madhya Pradesh](state)
+   
+   - what are the covid cases in [Assam](state)
+   - what is the situation in [Assam](state)
+   - give me information about the state of [Assam](state)
+   - [Assam](state)
+   
+   - what are the covid cases in [Arunachal Pradesh](state)
+   - what is the situation in [Arunachal Pradesh](state)
+   - give me information about the state of [Aruanachal Pradesh](state)
+   - [Arunachal Pradesh](state)
+   
+   - what are the covid cases in [Andhra Pradesh](state)
+   - what is the situation in [Andhra Pradesh](state)
+   - [Andhra Pradesh](state)
+   - give me information about the state of [Andhra Pradesh](state)
+   
+   - what are the covid cases in [Bihar](state)
+   - what is the situation in [Bihar](state)
+   - [Bihar](state)
+   - give me information about the state of [Bihar](state)
+   
+   - what are the covid cases in [Chattisgarh](state)
+   - [Chattisgarh](state)
+   - what is the situation in [Chattisgarh](state)
+   - give me information about the state of [Chattisgarh](state)
+   
+   - what are the covid cases in [Goa](state)
+   - [Goa](state)
+   - what is the situation in [Goa](state)
+   - give me information about the state of [Goa](state)
+   
+   - what are the covid cases in [Gujarat](state)
+   - [Gujarat](state)
+   - what is the situation in [Gujarat](state)
+   - give me information about the state of [Gujarat](state)
+   
+   - what are the covid cases in [Haryana](state)
+   - what is the situation in [Haryana](state)
+   - [Haryana](state)
+   - give me information about the state of [Haryana](state)
+   
+   - what are the covid cases in [Himachal Pradesh](state)
+   - [Himachal Pradesh](state)
+   - what is the situation in [Hiimachal Pradesh](state)
+   - give me information about the state of [Himachal Pradesh](state)
+   
+   - what are the covid cases in [Jharkhand](state)
+   - [Jharkhand](state)
+   - what is the situation in [Jharkhand](state)
+   - give me information about the state of [Jharkhand](state)
+   
+   - what are the covid cases in [Karnataka](state)
+   - [Karnataka](state)
+   - what is the situation in [Karnataka](state)
+   - give me information about the state of [Karnataka](state)
+   
+   - what are the covid cases in [kerala](state)
+   - [kerala](state)
+   - what is the situation in [Kerala](state)
+   - give me information about the state of [Kerala](state)
+   
+   - what are the covid cases in [Manipur](state)
+   - [Manipur](state)
+   - what is the situation in [Manipur](state)
+   - give me information about the state of [Manipur](state)
+   
+   - what are the covid cases in [Meghalaya](state)
+   - what is the situation in [Meghalaya](state)
+   - [Meghalaya](state)
+   - give me information about the state of [Meghalaya](state)
+   
+   - what are the covid cases in [Mizoram](state)
+   - [Mizoram](state)
+   - what is the situation in [Mizoram](state)
+   - give me information about the state of [Mizoram](state)
+   
+   - what are the covid cases in [Nagaland](state)
+   - [Nagaland](state)
+   - what is the situation in [Nagaland](state)
+   - give me information about the state of [Nagaland](state)
+   
+   - what are the covid cases in [Punjab](state)
+   - [Punjab](state)
+   - what is the situation in [Punjab](state)
+   - give me information about the state of [Punjab](state)
+   
+   - what are the covid cases in [Rajasthan](state)
+   - what is the situation in [Rajasthan](state)
+   - [Rajasthan](state)
+   - give me information about the state of [Rajasthan](state)
+   
+   - what are the covid cases in [Sikkim](state)
+   - [Sikkim](state)
+   - what is the situation in [Sikkim](state)
+   - give me information about the state of [Sikkim](state)
+   
+   - what are the covid cases in [Tamil Nadu](state)
+   - [Tamil Nadu](state)
+   - what is the situation in [Tamil Nadu](state)
+   - give me information about the state of [Tamil Nadu](state)
+   
+   - what are the covid cases in [Telangana](state)
+   - [Telangana](state)
+   - what is the situation in [Telangana](state)
+   - give me information about the state of [Telangana](state)
+   
+   - what are the covid cases in [Tripura](state)
+   - [Tripura](state)
+   - what is the situation in [Tripura](state)
+   - give me information about the state of [Tripura](state)
+   
+   - what are the covid cases in [Uttar Pradesh](state)
+   - [Uttar Pradesh](state)
+   - what is the situation in [Uttar Pradesh](state)
+   - give me information about the state of [Uttar Pradesh](state)
+   
+   - what are the covid cases in [Uttarakhand](state)
+   - [Uttarakhand](state)
+   - what is the situation in [Uttarakhand](state)
+   - give me information about the state of [Uttarakhand](state)
+   
+   - what are the covid cases in [West Bengal](state)
+   - [West Bengal](state)
+   - what is the situation in [West Bengal](state)
+   - give me information about the state of [West Bengal](state)
+   
+   - what are the covid cases in [Andaman and Nicobar islands](state)
+   - [Andaman and Nicobar islands](state)
+   - what is the situation in [Andaman and Nicobar islands](state)
+   - give me information about the state of [Andaman and Nicobar islands](state)
+   
+   - what are the covid cases in [Chandigarh](state)
+   - what is the situation in [Chandigarh](state)
+   - [Chandigarh](state)
+   - give me information about the state of [Chandigarh](state)
+   
+   - what are the covid cases in [Dadra and Nagar Haveli and Daman and Diu](state)
+   - [Dadra and Nagar Haveli and Daman and Diu](state)
+   - what is the situation in [Dadra and Nagar Haveli and Daman and Diu](state)
+   - give me information about the state of [Dadra and Nagar Haveli and Daman and Diu](state)
+   
+   - what are the covid cases in [Delhi](state)
+   - [Delhi](state)
+   - what is the situation in [Delhi](state)
+   - give me information about the state of [Delhi](state)
+   
+   - what are the covid cases in [Jammu and Kashmir](state)
+   - [Jammu and Kashmir](state)
+   - what is the situation in [Jammu and Kashmir](state)
+   - give me information about the state of [Jammu and Kashmir](state)
+   
+   - what are the covid cases in [Ladakh](state)
+   - [Ladakh](state)
+   - what is the situation in [Ladakh](state)
+   - give me information about the state of [Ladakh](state)
+   
+   - what are the covid cases in [Lakshadweep](state)
+   - [Lakshadweep](state)
+   - what is the situation in [Lakshadweep](state)
+   - give me information about the state of [Lakshadweep](state)
+   
+   - what are the covid cases in [Puducherry](state)
+   - [Puducherry](state)
+   - what is the situation in [Puducherry](state)
+   - give me information about the state of [Puducherry](state)
